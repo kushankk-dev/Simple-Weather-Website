@@ -3,7 +3,7 @@
 const weatherForm = document.querySelector(".weatherForm");
 const cityName = document.querySelector(".cityName");
 const card = document.querySelector(".card");
-const api_Key = "0d00c087e7fe8adb7c12e433554346f4";
+const api_Key = "YOUR_OWN_API_KEY"; // Generate a Free API Key from OpenWeather.org 
 
 weatherForm.addEventListener("submit", async event =>{
     event.preventDefault();
@@ -150,4 +150,5 @@ function dispError(message){
     card.style.display = "flex";
     card.appendChild(errorDisp);
 }
+
 
